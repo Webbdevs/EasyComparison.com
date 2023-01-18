@@ -1,0 +1,49 @@
+body{
+    background-image: url('background.jpg');
+}
+hr {
+    transform: rotate(90deg);
+    height:50%;
+    border-width: 10px;
+    font-weight: bold;
+    opacity: 0.3;
+}
+h1{
+    text-align: center;
+}
+#left-al{
+    float: left;
+    margin: 20px;
+}
+.right-al{
+    float:right;
+}
+button{
+    width:300px;
+    height:30px;
+    background: orange;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+button:hover{
+    transform: scale(1.2);
+    background-color: lime;
+}
+.left-txt{
+    background-color: skyblue;
+    float:left;
+    height:60px;
+    width:300px;
+    border-radius: 10px;
+}
+.right-txt{
+    background-color: skyblue;
+    float:right;
+    height:60px;
+    width:300px;
+    border-radius: 10px;
+}
+#Box-id1{
+    height: auto;
+}
