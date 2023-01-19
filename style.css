@@ -34,16 +34,15 @@ button:hover{
     background-color: skyblue;
     float:left;
     height:60px;
-    width:300px;
+    width:370px;
     border-radius: 10px;
+    visibility: hidden;
 }
 .right-txt{
     background-color: skyblue;
     float:right;
     height:60px;
-    width:300px;
+    width:370px;
     border-radius: 10px;
-}
-#Box-id1{
-    height: auto;
+    visibility: hidden;
 }
