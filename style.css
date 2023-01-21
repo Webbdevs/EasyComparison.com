@@ -1,24 +1,19 @@
 body{
     background-image: url('background.jpg');
 }
-#hor-z {
-    transform: rotate(90deg);
-    height:50%;
-    border-width: 10px;
-    font-weight: bold;
-    opacity: 0.3;
-}
-h1{
-    text-align: center;
-}
-#left-al{
-    float: left;
-    margin: 20px;
-}
-.right-al{
+#table-id td {
+    width: 100vh; /* or width: 50vw; */
+  }
+  .left-al{
+    float:left;
+  }
+  .right-al{
     float:right;
-}
-#compare-btn{
+  }
+  table{
+    visibility: hidden;
+  }
+  #compare-btn{
     position: relative;
     width:300px;
     height:30px;
@@ -31,103 +26,4 @@ h1{
 #compare-btn:hover{
     transform: scale(1.2);
     background-color: lime;
-}
-.left-txt{
-text-align:bottom;
-    float:left;
-    height:auto;
-    width:45%;
-    border-radius: 10px;
-    visibility: hidden;
-}
-.right-txt{
-    text-align:bottom;
-    float:right;
-    height:auto;
-    width: 45%;
-    border-radius: 10px;
-    visibility: hidden;
-}
-select{
-    width:280px;
-    border-radius: 10px;
-    height:30px;
-}
-.middle-line {
-    border-left: 2px solid black; /* or border-right */
-    height: 100%; /* or a specific height value */
-    position: absolute; /* to position it in the middle */
-    top: 0;
-    left: 50%; /* or right if using border-right */
-    margin-left: -1px; /* to center the line */
-}
-
-#hr {
-    transform: rotate(90deg);
-    height:50%;
-    border-width: 10px;
-    font-weight: bold;
-    opacity: 0.2;
-}
-.gap{
-    visibility: hidden;
-}
-.big-txt{
-    height:70px;
-    margin-top: -8px;
-
-}
-@media only screen and (max-width: 800px) {
-    select {
-        width:250px;
-        border-radius: 10px;
-        height:30px;
-    }
-    body{
-        font-size: 10px;
-    }
-  }
-
-@media screen and (max-width: 600px) {
-    select {
-        width:150px;
-        border-radius: 10px;
-        height:30px;
-    }
-    body{
-        font-size: 10px;
-    }
-  }
-  @media screen and (max-width: 450px) {
-    .left-txt{
-
-        float:left;
-        height:30px;
-        width:45%;
-        border-radius: 10px;
-        visibility: hidden;
-    }
-    .right-txt{
-    
-        float:right;
-        height:30px;
-        width: 45%;
-        border-radius: 10px;
-        visibility: hidden;
-    }
-
-    select {
-        width:150px;
-        border-radius: 10px;
-        height:30px;
-    }
-    body{
-        font-size: 10px;
-    }
-  }
-/*.left-txt{
-    float: left;
-}
-.right-txt{
-    float: right;
-}*/
+} 
