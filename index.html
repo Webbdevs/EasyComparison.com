@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
- 
+ <!--img src="https://xiaomiui.net/wp-content/themes/xiaomiuiwp/assets/phones/devicephotos/redmi_11_prime_5g_light_india_3.png"-->
     <h1>Mobile Comparison</h1>
     
     <span class="left-al">
@@ -23,46 +23,57 @@
         </select>
     </span>
     <center>
-        <button id="compare-btn">Compare both of them</button>
+        <div><button id="compare-btn">Compare both of them</button></div>
     </center>
-    <table id='table-id' border="1">
+    <table id='table-id' border="4">
         <tr>
+            <td class="headers">Price</td>
             <td class='left-txt' id="Price-id1"></td>
             <td class="right-txt" id="Price-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Storage</td>
             <td class='left-txt' id="Storage-id1"></td>
             <td class="right-txt" id="Storage-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Display</td>
             <td class='left-txt' id="Display-id1"></td>
             <td class="right-txt" id="Display-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Camera</td>
             <td class='left-txt' id="Camera-id1"></td>
             <td class="right-txt" id="Camera-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Battery</td>
             <td class='left-txt' id="Battery-id1"></td>
             <td class="right-txt" id="Battery-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Processor</td>
             <td class='left-txt' id="Processor-id1"></td>
             <td class="right-txt" id="Processor-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Resolution</td>
             <td class='left-txt' id="Resolution-id1"></td>
             <td class="right-txt" id="Resolution-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Sim type</td>
             <td class='left-txt' id="Sim-id1"></td>
             <td class="right-txt" id="Sim-id2"></td>
         </tr>
         <tr>
+            <td class="headers">Weight</td>
             <td class='left-txt' id="Weight-id1"></td>
             <td class="right-txt" id="Weight-id2"></td>
         </tr>
     </table>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
