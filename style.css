@@ -1,7 +1,7 @@
 body{
     background-image: url('background.jpg');
 }
-hr {
+#hor-z {
     transform: rotate(90deg);
     height:50%;
     border-width: 10px;
@@ -18,31 +18,67 @@ h1{
 .right-al{
     float:right;
 }
-button{
+#compare-btn{
+    position: relative;
     width:300px;
     height:30px;
-    background: orange;
+    background: lightgray;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s;
 }
-button:hover{
+
+#compare-btn:hover{
     transform: scale(1.2);
     background-color: lime;
 }
 .left-txt{
-    background-color: skyblue;
+
     float:left;
-    height:60px;
-    width:370px;
+    height:auto;
+    width:45%;
     border-radius: 10px;
     visibility: hidden;
 }
 .right-txt{
-    background-color: skyblue;
+
     float:right;
-    height:60px;
-    width:370px;
+    height:auto;
+    width: 45%;
     border-radius: 10px;
     visibility: hidden;
 }
+select{
+    width:300px;
+
+    border-radius: 10px;
+    height:30px;
+}
+.middle-line {
+    border-left: 2px solid black; /* or border-right */
+    height: 100%; /* or a specific height value */
+    position: absolute; /* to position it in the middle */
+    top: 0;
+    left: 50%; /* or right if using border-right */
+    margin-left: -1px; /* to center the line */
+}
+
+#hr {
+    transform: rotate(90deg);
+    height:50%;
+    border-width: 10px;
+    font-weight: bold;
+    opacity: 0.2;
+}
+.gap{
+    visibility: hidden;
+}
+.big-txt{
+    margin-top: -10px;
+}
+/*.left-txt{
+    float: left;
+}
+.right-txt{
+    float: right;
+}*/
