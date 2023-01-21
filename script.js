@@ -1,5 +1,3 @@
-
-
 let mobObj = [
     {
         model:'redmi 11 prime 5g',
@@ -112,7 +110,7 @@ let mobObj = [
         {
             model:'APPLE Iphone 14 pro max',
             Storage:'128 GB ROM,256 GB ROM,512 GB ROM,1 TB ROM',
-            Display:'17.02 cm (6.7 inch) Super Retina XDR Display Dynamic Island, Always-On Display,  Refresh Rates Upto 120 Hz Max Brightness: 1,000 nits, Peak Brightness: 1,600 nits, Peak Brightness (Outdoor): 2,000 nits',
+            Display:'17.02 cm (6.7 inch) Super Retina XDR Display Dynamic Island, Always-On Display,  Refresh Rates Upto 120 Hz Max Brightness: 1,000 nits, Peak Brightness: 1,600 nits, Peak Brightness : 2,000 nits',
             Camera:'48MP + 12MP + 12MP + 12MP | 12MP Front Camera',
             Battery:'4323 mAh Battery',
             Processor:'A16 Bionic Chip, 6 Core Processor',
@@ -236,4 +234,3 @@ let selectMob2 = document.getElementById('mobile-options-2')
             compareBtn.disabled = false;
         } 
     }
-    
