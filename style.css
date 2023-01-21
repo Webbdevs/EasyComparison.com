@@ -33,7 +33,7 @@ h1{
     background-color: lime;
 }
 .left-txt{
-
+text-align:bottom;
     float:left;
     height:auto;
     width:45%;
@@ -41,7 +41,7 @@ h1{
     visibility: hidden;
 }
 .right-txt{
-
+    text-align:bottom;
     float:right;
     height:auto;
     width: 45%;
@@ -73,7 +73,9 @@ select{
     visibility: hidden;
 }
 .big-txt{
-    margin-top: -10px;
+    height:70px;
+    margin-top: -8px;
+
 }
 @media only screen and (max-width: 800px) {
     select {
@@ -97,14 +99,30 @@ select{
     }
   }
   @media screen and (max-width: 450px) {
+    .left-txt{
+
+        float:left;
+        height:30px;
+        width:45%;
+        border-radius: 10px;
+        visibility: hidden;
+    }
+    .right-txt{
+    
+        float:right;
+        height:30px;
+        width: 45%;
+        border-radius: 10px;
+        visibility: hidden;
+    }
+
     select {
         width:150px;
         border-radius: 10px;
         height:30px;
     }
     body{
-        font-size: 8px;
-        font-weight: bold;
+        font-size: 10px;
     }
   }
 /*.left-txt{
