@@ -141,6 +141,7 @@ for(let i = 0; i < mobObj.length; i++)
 let compareBtn = document.getElementById('compare-btn')
 compareBtn.onclick = () =>
 {
+    document.getElementById('table-id').style.visibility = 'visible'
     let selectMob1 = document.getElementById('mobile-options-1')
 let selectMob2 = document.getElementById('mobile-options-2')
     if(defSel1==selectMob1.value || defSel2==selectMob2.value)
@@ -184,29 +185,29 @@ let selectMob2 = document.getElementById('mobile-options-2')
     {
         if(selectMob1.value==mobObj[j].model)
         {
-            document.getElementById('storage-id1').innerText = mobObj[j].Storage
+            document.getElementById('Storage-id1').innerText = mobObj[j].Storage
             document.getElementById('Display-id1').innerText = mobObj[j].Display
             document.getElementById('Camera-id1').innerText = mobObj[j].Camera
             document.getElementById('Battery-id1').innerText = mobObj[j].Battery
             document.getElementById('Processor-id1').innerText = mobObj[j].Processor
             document.getElementById('Resolution-id1').innerText = mobObj[j].Resolution
             document.getElementById('Sim-id1').innerText = mobObj[j].Sim
-            document.getElementById('weight-id1').innerText = mobObj[j].weight
-            document.getElementById('Box-id1').innerText = mobObj[j].Price
+            document.getElementById('Weight-id1').innerText = mobObj[j].weight
+            document.getElementById('Price-id1').innerText = mobObj[j].Price
             //alert('Storage ' + mobObj[j].Storage)
             //alert('Display ' + mobObj[j].Display)
         }
         if(selectMob2.value==mobObj[j].model)
         {
-            document.getElementById('storage-id2').innerText = mobObj[j].Storage
+            document.getElementById('Storage-id2').innerText = mobObj[j].Storage
             document.getElementById('Display-id2').innerText = mobObj[j].Display
             document.getElementById('Camera-id2').innerText = mobObj[j].Camera
             document.getElementById('Battery-id2').innerText = mobObj[j].Battery
             document.getElementById('Processor-id2').innerText = mobObj[j].Processor
             document.getElementById('Resolution-id2').innerText = mobObj[j].Resolution
             document.getElementById('Sim-id2').innerText = mobObj[j].Sim
-            document.getElementById('weight-id2').innerText = mobObj[j].weight
-            document.getElementById('Box-id2').innerText = mobObj[j].Price
+            document.getElementById('Weight-id2').innerText = mobObj[j].weight
+            document.getElementById('Price-id2').innerText = mobObj[j].Price
             //alert('2nd ' + mobObj[j].Storage)
         }
     }
