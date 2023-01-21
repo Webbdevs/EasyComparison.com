@@ -1,3 +1,5 @@
+
+
 let mobObj = [
     {
         model:'redmi 11 prime 5g',
@@ -120,6 +122,8 @@ let mobObj = [
             Price:'Price 1,32,000 - 1,82,999'
         },
 ]
+  let defSel1 = ''
+  let defSel2 = ''
 //let vOptions = document.getElementById('mobile-options')
 for(let i = 0; i < mobObj.length; i++)
 {
@@ -131,11 +135,43 @@ for(let i = 0; i < mobObj.length; i++)
     vOptions2.innerText = mobObj[i].model
     document.getElementById('mobile-options-1').append(vOptions1)
     document.getElementById('mobile-options-2').append(vOptions2)
+
+    defSel1 = document.getElementById('mobile-options-1').value
+    defSel2 = document.getElementById('mobile-options-2').value
 }
 
 let compareBtn = document.getElementById('compare-btn')
 compareBtn.onclick = () =>
 {
+    let selectMob1 = document.getElementById('mobile-options-1')
+let selectMob2 = document.getElementById('mobile-options-2')
+    if(defSel1==selectMob1.value || defSel2==selectMob2.value)
+    {
+        alert('Select any mobiles')
+        return;
+    }
+    if(selectMob1.value=='APPLE Iphone 14 pro max')
+    {
+        document.getElementById('Display-id1').classList.add('big-txt')
+    }
+    else
+    {
+        document.getElementById('Display-id1').classList.remove('big-txt')
+    }
+        if(selectMob2.value=='APPLE Iphone 14 pro max')
+        {
+            document.getElementById('Display-id2').classList.add('big-txt')
+        }
+        else
+        {
+            document.getElementById('Display-id2').classList.remove('big-txt')
+        }
+
+    let allGaps = document.querySelectorAll('.gap')
+    for(let hrs of allGaps)
+    {
+        hrs.style.visibility = 'visible'
+    }
     let leftTxt = document.querySelectorAll('.left-txt')
     for(let element of leftTxt)
     {
@@ -146,13 +182,10 @@ compareBtn.onclick = () =>
     {
         element.style.visibility = 'visible'
     }
-    let selectMob1 = document.getElementById('mobile-options-1')
-    let selectMob2 = document.getElementById('mobile-options-2')
     for(let j = 0; j < mobObj.length; j++)
     {
         if(selectMob1.value==mobObj[j].model)
         {
-
             document.getElementById('storage-id1').innerText = mobObj[j].Storage
             document.getElementById('Display-id1').innerText = mobObj[j].Display
             document.getElementById('Camera-id1').innerText = mobObj[j].Camera
@@ -180,3 +213,27 @@ compareBtn.onclick = () =>
         }
     }
 }
+   /* document.getElementById('mobile-options-1').onclick = () =>
+    {
+        let vOption1 = document.getElementById('mobile-options-1')
+        let vOption2 = document.getElementById('mobile-options-2')
+        if(vOption1.value!=defSel1)
+        {
+                document.getElementById('compare-btn').style.backgroundColor = 'skyblue'
+                //document.getElementById('disable-txt').style.display='none'
+        }
+    }*/
+    const option1 = document.getElementById('mobile-options-1');
+    const option2 = document.getElementById('mobile-options-2');
+    //const compareBtn = document.getElementById('compare-btn');
+    
+    option1.addEventListener('change', updateButton);
+    option2.addEventListener('change', updateButton);
+    
+    function updateButton() {
+        if (option1.value !== '' && option2.value !== '') {
+            compareBtn.style.backgroundColor = 'skyblue';
+            compareBtn.disabled = false;
+        } 
+    }
+    
