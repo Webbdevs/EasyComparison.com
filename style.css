@@ -1,11 +1,25 @@
 body{
     background-image: url('background.jpg');
 }
-#table-id td {
-    width: 100vh; /* or width: 50vw; */
-  }
+h1{
+    text-align: center;
+}
+.left-txt{
+  width:100vh;
+}
+.right-txt{
+  width:100vh;
+}
+/*#table-id td {
+    width: 100vh; /* or width: 50vw; 
+  }*/
+  select {
+    width: 170px; /* adjust as desired */
+}
+
   .left-al{
     float:left;
+    width:100px;
   }
   .right-al{
     float:right;
@@ -14,16 +28,23 @@ body{
     visibility: hidden;
   }
   #compare-btn{
-    position: relative;
     width:300px;
     height:30px;
     background: lightgray;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s;
+    margin:10px;
 }
 
 #compare-btn:hover{
     transform: scale(1.2);
     background-color: lime;
 } 
+select{
+    height:30px;
+    border-radius: 10px;
+}
+.headers {
+  width: auto; /* Adjust the width as per your requirement */
+}
