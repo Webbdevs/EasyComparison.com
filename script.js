@@ -1,4 +1,3 @@
-
 let firebaseConfig = {
     apiKey: "AIzaSyB2dc7G54nZg1H-tKUbxRtWmADEQxRJv10",
     authDomain: "simple-login-page-736b4.firebaseapp.com",
@@ -54,6 +53,7 @@ function selOpt()
 let compareBtn = document.getElementById('compare-btn')
 compareBtn.onclick = () =>
 {
+    document.querySelector('.image-container').style.visibility = 'visible'
     document.getElementById('table-id').style.visibility = 'visible'
     let selectMob1 = document.getElementById('mobile-options-1')
 let selectMob2 = document.getElementById('mobile-options-2')
@@ -98,6 +98,7 @@ let selectMob2 = document.getElementById('mobile-options-2')
     {
         if(selectMob1.value==mobObj[j].Model)
         {
+            document.getElementById('Image-id1').src = mobObj[j].Image
             document.getElementById('Storage-id1').innerText = mobObj[j].Storage
             document.getElementById('Display-id1').innerText = mobObj[j].Display
             document.getElementById('Camera-id1').innerText = mobObj[j].Camera
@@ -112,6 +113,7 @@ let selectMob2 = document.getElementById('mobile-options-2')
         }
         if(selectMob2.value==mobObj[j].Model)
         {
+            document.getElementById('Image-id2').src = mobObj[j].Image
             document.getElementById('Storage-id2').innerText = mobObj[j].Storage
             document.getElementById('Display-id2').innerText = mobObj[j].Display
             document.getElementById('Camera-id2').innerText = mobObj[j].Camera
@@ -125,16 +127,6 @@ let selectMob2 = document.getElementById('mobile-options-2')
         }
     }
 }
-   /* document.getElementById('mobile-options-1').onclick = () =>
-    {
-        let vOption1 = document.getElementById('mobile-options-1')
-        let vOption2 = document.getElementById('mobile-options-2')
-        if(vOption1.value!=defSel1)
-        {
-                document.getElementById('compare-btn').style.backgroundColor = 'skyblue'
-                //document.getElementById('disable-txt').style.display='none'
-        }
-    }*/
     const option1 = document.getElementById('mobile-options-1');
     const option2 = document.getElementById('mobile-options-2');
     //const compareBtn = document.getElementById('compare-btn');
