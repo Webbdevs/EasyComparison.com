@@ -5,10 +5,14 @@ h1{
     text-align: center;
 }
 .left-txt{
+  text-align: left;
   width:100vh;
+  border: 2px solid black;
 }
 .right-txt{
   width:100vh;
+  border: 2px solid black;
+  text-align: left;
 }
 /*#table-id td {
     width: 100vh; /* or width: 50vw; 
@@ -46,5 +50,14 @@ select{
     border-radius: 10px;
 }
 .headers {
+  border: 2px solid black;
   width: auto; /* Adjust the width as per your requirement */
+}
+.image-container{
+  display: block;
+  background-image: url('background.jpg');
+  visibility: hidden;
+}
+.table-container {
+  display: none;
 }
