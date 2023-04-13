@@ -8,19 +8,48 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
- <!--img src="https://xiaomiui.net/wp-content/themes/xiaomiuiwp/assets/phones/devicephotos/redmi_11_prime_5g_light_india_3.png"-->
     <h1>Mobile Comparison</h1>
     
     <span class="left-al">
-        <select placeholder="Please select a mobile" id="mobile-options-1">
-            <option disabled selected value> -- select an option -- 
-        </select>
+            <select placeholder="Please select a mobile" id="mobile-options-1">
+                <option disabled selected value>select an option</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Apple</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Samsung</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Google Pixel</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Xiaomi</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Realme</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Huawei</option>
+                    <option onclick="getMobVal(event)" class="mobiles">OnePlus</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Oppo</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Vivo</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Motorola</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Lenovo</option>
+                    <option onclick="getMobVal(event)" class="mobiles">Asus</option>
+                    <option onclick="getMobVal(event)" class="mobiles">LG</option>
+            </select>
+            <div class="container">
+        </div>
     </span>
 
     <span class="right-al">
         <select placeholder="Please select a mobile" id="mobile-options-2">
-            <option id='disable-txt'disabled selected value> -- select an option --
+            <option id='disable-txt'disabled selected value>select an option</option>
+            <option onclick="getMobVal(event)" class="mobile">Apple</option>
+            <option onclick="getMobVal(event)" class="mobile">Samsung</option>
+            <option onclick="getMobVal(event)" class="mobile">Google Pixel</option>
+            <option onclick="getMobVal(event)" class="mobile">Xiaomi</option>
+            <option onclick="getMobVal(event)" class="mobiles">Realme</option>
+            <option onclick="getMobVal(event)" class="mobile">Huawei</option>
+            <option onclick="getMobVal(event)" class="mobile">OnePlus</option>
+            <option onclick="getMobVal(event)" class="mobile">Oppo</option>
+            <option onclick="getMobVal(event)" class="mobile">Vivo</option>
+            <option onclick="getMobVal(event)" class="mobile">Motorola</option>
+            <option onclick="getMobVal(event)" class="mobile">Lenovo</option>
+            <option onclick="getMobVal(event)" class="mobile">Asus</option>
+            <option onclick="getMobVal(event)" class="mobile">LG</option>
         </select>
+        <div class="container-2">
+        </div>
     </span>
     <center>
         <div><button id="compare-btn">Compare both of them</button></div>
